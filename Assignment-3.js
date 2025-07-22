@@ -1,3 +1,21 @@
+function isPrime(num) {
+  
+  if (num < 2) {
+    return false;
+  }
+
+  
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      return false; 
+    }
+  }
+
+  return true; 
+}
+console.log(isPrime(3))
+console.log(isPrime(5))
+console.log(isPrime(10))
 
 
 // out put holo 3 hole true and 10 hole false hobe , prime songkha ja 1 dara bivajjo,
@@ -18,7 +36,7 @@ return count;
 let result = countVowels("My name is Rimon Boydho. I am a student.")
 console.log(result);
 
-
+// fibonacci Number
 function fibonacci(number) {
   let fibNumber = [0, 1];
 
